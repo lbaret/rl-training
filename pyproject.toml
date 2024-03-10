@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "rl-training"
+version = "0.1.0"
+description = "Using any environment to play with RL agents"
+authors = ["Loïc <baret.loic.1@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "^2.2.1"
+rlcard = {extras = ["torch"], version = "^1.2.0"}
+lightning = "^2.2.1"
+numpy = "^1.26.4"
+scipy = "^1.12.0"
+pandas = "^2.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
